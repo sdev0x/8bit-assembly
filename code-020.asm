@@ -1,0 +1,24 @@
+JMP code
+
+v1: db 0x00
+v2: db 0x02
+v3: db 0x03
+v4: db 0x04
+
+v5: db 0x0A
+    db 0x0B
+    db 0x0C
+    db 0x0D 
+    db 0x0E
+    db 0x0F
+    db 0xA5
+    db 0xB7 
+    db 0x3E
+code:
+ mov a,v5
+ add a,3
+ mov c,[a]
+ add a,4
+mov d,[a]
+
+    HLT
