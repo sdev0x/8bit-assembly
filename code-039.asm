@@ -1,0 +1,10 @@
+; ~((((32 << 1) | 0x6B) & 0xFF) ^ (0xE8 >> 2))
+
+mov a,32
+shl a,1
+or a,0x6b
+and a,0xff
+mov b,0xe8
+shr b,2
+xor a,b
+not a
